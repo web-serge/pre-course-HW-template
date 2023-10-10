@@ -9,42 +9,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>IT-INCUBATOR</title>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper header__container">
-            <div>
+<header class="header">
+    <div class="wrapper header__container">
+        <div>
+            <a href="">
                 <img src="./assets/images/Logo.svg" alt="logo">
-            </div>
-            <div class="burger">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-            </div>
-            <ul class="header__links">
-               <li><a href="" class="header__link">Main</a></li>
-               <li><a href="" class="header__link">Rates</a></li>
-               <li><a href="" class="header__link">create account</a></li>
-            </ul>
+            </a>
         </div>
-    </header>
-    <main>
-        <section class="main">
-            <div class="wrapper main__container">
-                <div class="">
-                    <h1>Markup achievement</h1>
-                    <p class="main__text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
-                    <button class="button button__main">Learn More</button>
+        <div class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </div>
+        <ul class="header__links">
+            <li><a href="" class="header__link">Main</a></li>
+            <li><a href="" class="header__link">Rates</a></li>
+            <li><a href="" class="header__link">create account</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="main">
+        <div class="wrapper main__container">
+            <div class="main__left">
+                <h1>Markup achievement</h1>
+                <p class="main__text">The harder you work for something, the greater you’ll feel when you achieve
+                    it.</p>
+                <button class="button button__main">Learn More</button>
+            </div>
+            <div>
+                <img class="main__image" src="./assets/images/image.png" alt="mainImage">
+            </div>
+        </div>
+    </section>
+    <section class="table">
+        <div class="wrapper table__container">
+            <h2>Rates</h2>
+            <p class="table__text">Failure will never overtake me if my determination to succeed is strong enough.</p>
+            <table class="table__block">
+                <tr>
+                    <th>Features</th>
+                    <th>Standard</th>
+                    <th>Plus</th>
+                    <th>Pro</th>
+                </tr>
+                <tr>
+                    <th>Theory</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Practice</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Code review</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Have questions?</th>
+                    <th>
+                        <button class="button button__table button__table_noActive">Get Now</button>
+                    </th>
+                    <th>
+                        <button class="button button__table">Get Now</button>
+                    </th>
+                    <th>
+                        <button class="button button__table button__table_noActive">Get Now</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="wrapper registration__container">
+            <div class="registration__left">
+                <h2>Create your free account</h2>
+                <p>
+                    Let us first talk about dreams. We all know that dreams do play a role in our daily lives. The
+                    majority
+                    of people pay little attention to dreams. Dreams can help us find solutions to our daily problems
+                    and
+                    see things from a different perspective. Whenever we are dreaming, we can be who or what we want to
+                    be,
+                    regardless of the fact that in real life.
+                </p>
+                <ul>
+                    <li>Easy setup, fast start</li>
+                    <li>Free forever for core features</li>
+                    <li>14-day trial of premium features</li>
+                </ul>
+            </div>
+            <form action="" class="form">
+                <div>
+                    <input type="text" class="input" placeholder="Full Name*">
+                </div>
+                <div class="registration__inputBox">
+                    <input type="email" class="input input__small" placeholder="Email*">
+                    <input type="password" class="input input__small" placeholder="Password*">
+                    <input type="date" class="input input__small" placeholder="Date of Birth">
+                    <div class="input input__small">
+                        <select>
+                            <option selected disabled>Country</option>
+                            <option>Belarus</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>India</option>
+                        </select>
+                    </div>
                 </div>
                 <div>
-                    <img class="main__image" src="./assets/images/image.png" alt="mainImage">
+                    <input class="radio" type="radio" name="direction" id="frontend" checked><label for="frontend">Frontend</label>
+                    <input class="radio" type="radio" name="direction" id="backend"> <label for="backend">Backend</label>
                 </div>
-            </div>
-        </section>
-    </main>
+                <fieldset>
+                    <legend>Favorite Technologies</legend>
+                    <label for="html"><input class="checkbox" type="checkbox" checked id="html" name="html">HTML</label>
+                    <label for="css"><input class="checkbox" type="checkbox" checked id="css" name="css">CSS</label>
+                    <label for="react"><input class="checkbox" type="checkbox" checked id="react" name="react">React</label>
+                    <label for="styled"><input class="checkbox" type="checkbox" id="styled" name="styled">Styled components</label>
+                </fieldset>
+                <div>
+                    <textarea class="textarea" placeholder="Something else about you..."></textarea>
+                </div>
+                <button class="button" type="submit">registration</button>
+            </form>
+        </div>
+    </section>
+</main>
 <footer class="footer">
-    <p>Copyright © 2023. All rights reserved.</p>
+    <small>Copyright © 2023. All rights reserved.</small>
 </footer>
 </body>
 </html>
